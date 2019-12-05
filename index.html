@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Ya like daaahgs?</title>
+  </head>
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="p-3">Get-a-Gif</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-2">
+        <button
+          onclick="app.gifsController.generateGifAsync()"
+          class="btn btn-warning"
+        >
+          Generate Gif
+        </button>
+      </div>
+      <div class="col-7">
+        <div id="display-gif"></div>
+      </div>
+      <div class="col-3">
+        <h3 class="text-center">Got Gifs</h3>
+      </div>
+    </div>
+  </main>
+
+  <body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app/main.js" type="module"></script>
+  </body>
+</html>
